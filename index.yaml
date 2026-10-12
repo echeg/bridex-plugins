@@ -104,11 +104,11 @@ plugins:
     title: LoreMax
     kind: integration
     description: LoreMax workflows for images and video — the organization's own generation service.
-    agent_notes: Read loremax_workflows first (free) for a workflow's fields and token price; loremax_generate is paid and saves outputs into the task artifacts with provenance; a run that outlives the wait returns a generation_id and the agent is woken when it lands (or loremax_result). Needs LOREMAX_API_KEY and LOREMAX_BASE_URL.
-    version: 0.1.0
+    agent_notes: "Read loremax_workflows first (free) for a workflow's fields and token price; loremax_generate is paid and saves outputs into the task artifacts with provenance; a run that outlives the wait returns a generation_id and the agent is woken when it lands (or loremax_result). Needs LOREMAX_API_KEY and LOREMAX_BASE_URL; optional profile_url switches the tools to a curated LoreMax MCP profile. A `submitting` reply means the paid call is still landing: end the turn, you will be woken — never call again."
+    version: 0.2.0
     repo: https://github.com/echeg/bridex-plugin-loremax
     ref: main
-    commit: 01059ea09a7eb687dd6d7cdf07a7f9b4272ca110
+    commit: 7d73065e761e45accc4a67c49cbca97838e06042
     permissions:
       network: true
       llm: false
