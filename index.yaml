@@ -105,10 +105,10 @@ plugins:
     kind: integration
     description: Agents deploy and run services on Railway — projects, databases, deploys, logs, variables, domains.
     agent_notes: Needs an account or workspace token, not a project token. Agents never see it — every call runs the bundled CLI with it inside the plugin.
-    version: 0.1.0
+    version: 0.1.1
     repo: https://github.com/nik-devs/bridex-plugin-railway
     ref: main
-    commit: 883064c07a39a65964f105903e6cda91e4da82c1
+    commit: 677ae63d0bc00cc7997ba28539d949d8e4259e9c
     permissions:
       network: true
       llm: false
