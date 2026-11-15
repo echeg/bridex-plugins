@@ -124,3 +124,16 @@ plugins:
     permissions:
       network: true
       llm: false
+  - name: app-studio
+    title: App Studio
+    kind: integration
+    description: "App concept studio: a canvas of screens, the screen editor, references, collections and builds"
+    agent_notes: "Workspace-scoped and opt-in: switch it on for the instance and list it in the workspace. Needs a Bridex with the plugin SDK 0.2+ (workspace scoping, pages, wiki pages). Screens are code in the workspace's project repository (github.com, Actions on); builds run through gh with the instance's GitHub token. The repository is private: the instance needs plugin_catalog.token with read access to it."
+    version: 0.1.0
+    repo: https://github.com/echeg/bridex-app-studio
+    ref: main
+    commit: ba815494906afd0ab7933a6946b6351681b5aa9f
+    permissions:
+      network: true
+      llm: false
+      page: true
